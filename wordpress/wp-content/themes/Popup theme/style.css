@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+
+body {
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    margin: 0 !important;
+    font-weight: 300;
+}
+a { text-decoration: none }
+a:hover { text-decoration: underline; color: #d42d3e; transition: all 256ms ease-in-out;}
+hr { border: 1px solid #eee; }
+::selection {
+  background: #c0525d;
+}
+::-moz-selection {
+  background: #c0525d;
+}
+.container {
+    padding: 30px;
+    float: left;
+}
+.floatleft { float: left;}
+#header {
+    position: relative;
+    margin-top: 40px;
+    background-color: #252525;
+    height: 100px;
+}
+#header .custom-logo {
+    position: absolute;
+    left: 0;
+    margin: -40px 50px 0 100px;
+    height: 150px;
+    width: auto;
+}
+#header .menu {
+    float: left;
+}
+#header .menu ul {
+    list-style: none;
+    position: absolute;
+    left: calc(150px + 100px);
+    top: 30px;    
+}
+#header .menu ul li { 
+    list-style: none;
+    float: left;     
+    height: 34px; 
+    position: relative;
+    padding: 10px;
+    transition: all 256ms ease-in-out;
+}
+#header .menu ul li:hover { 
+    background: white;
+    border-bottom: 5px solid #d42d3e;
+}
+#header .menu ul li a {  
+    color: #d42d3e;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+#main {
+    width: 75%;
+    float: left;
+}
+img.eyecatcher {
+    width: 100%;
+}
+.blogpost {
+    /*border: 1px solid #eee;
+    background: #f8f8f8;*/
+    color: #252525;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    background: #d42d3e;
+    color: white;
+    transition: all 256ms ease-in-out;
+    border: none;
+    height: 40px;
+    width: 180%;
+}
+.wpcf7-form-control.wpcf7-submit:hover {
+    box-shadow: 0 0 0 3px #d42d3e inset;
+    color: #d42d3e;
+    background: white;
+    cursor: pointer;
+}
+.wpcf7-form input {
+    height: 40px;
+}
+.wpcf7-form input, .wpcf7-form textarea {
+    width: 180%;
+    border: 1px solid #eee;
+}
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+    color: red;
+    border: 1px solid red;
+}
+
+#sidebar {
+    background: #f8f8f8;
+    border-left: 1px solid #eee;
+    width: calc(25% - 1px);
+    float: left;
+}
+#sidebar h3.widget-title {
+    font-weight: 400;
+}
+#sidebar #search-2 form input {
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 0 1px #EEE inset;
+    height: 40px;
+    margin: 5px 0;
+    padding: 0 15px;
+}
+#sidebar #search-2 form input#searchsubmit {
+    background: #d42d3e;
+    color: white;
+    transition: all 256ms ease-in-out;
+}
+#sidebar #search-2 form input#searchsubmit:hover {
+    box-shadow: 0 0 0 3px #d42d3e inset;
+    color: #d42d3e;
+    background: white;
+    cursor: pointer;
+}
+#sidebar .widget {
+    margin-bottom: 30px;
+}
+#sidebar .widget ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#sidebar .widget ul li {
+    margin-left: 30px;
+}
+#sidebar .widget ul li a {
+    color: #555;
+}
+#sidebar .widget-title {
+    color: #252525;
+    margin: 15px 0 5px 0;
+}
+#footer {
+    background-color: #252525;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    float: left;
+}
+.bottomMenu { display: block; width:960px;}
+.bottomMenu ul { display:inline; float:right;}
+.bottomMenu li { list-style-type: none; display: inline; font-size: 12px; }
+.bottomMenu li a {
+	color:#000;
+	line-height:15px;
+	text-decoration:none;
+	font-weight:normal;
+	border-right: thin solid #000;
+	padding: 0 7px 0 3px;
+}
+.bottomMenu li a:hover { color:#ccc; text-decoration:underline;}
+.bottomMenu li:last-child > a {border-right: none;} /* remove pipe from last item */
+
+@media screen and (max-width: 480px) {
+    #sidebar {
+        display: none !important;
+    }
+    #main {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 960px) {
+    #header {
+        height: 54px;
+    }
+    #header .menu ul {
+        left: 90px;
+        top: -15px;
+    }
+    #header .custom-logo {
+        margin: -30px 50px 0 30px;
+        height: 100px;
+        width: auto;
+    }
+    .wpcf7-form-control.wpcf7-submit {
+        width: 100%;
+    }
+    .wpcf7-form input, .wpcf7-form textarea {
+        width: 100%;
+    }
+}
+
+body.login {
+    background-image: url('../images/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  .login h1 a {
+    background-image: url('../bbq.png');
+  }
+  
+  .login label {
+    font-size: 12px;
+    color: #555555;
+  }
+  
+  .login input[type="text"]{
+    background-color: #ffffff;
+    border-color:#dddddd;
+    -webkit-border-radius: 4px;
+  }
+  
+  .login input[type="password"]{
+    background-color: #ffffff;
+    border-color:#dddddd;
+    -webkit-border-radius: 4px;
+  }
+  
+  .login .button-primary {
+    width: 120px;
+    float:right;
+    background-color:#17a8e3 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#17a8e3), to(#17a8e3));
+    background: -webkit-linear-gradient(top, #17a8e3, #17a8e3);
+    background: -moz-linear-gradient(top, #17a8e3, #17a8e3);
+    background: -ms-linear-gradient(top, #17a8e3, #17a8e3);
+    background: -o-linear-gradient(top, #17a8e3, #17a8e3);
+    background-image: -ms-linear-gradient(top, #17a8e3 0%, #17a8e3 100%);
+    color: #ffffff;
+    -webkit-border-radius: 4px;
+    border: 1px solid #0d9ed9;
+  }
+  
+  .login .button-primary:hover {
+    background-color:#17a8e3 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#17a8e3), to(#0d9ed9 ));
+    background: -webkit-linear-gradient(top, #17a8e3, #0d9ed9 );
+    background: -moz-linear-gradient(top, #17a8e3, #0d9ed9 );
+    background: -ms-linear-gradient(top, #17a8e3, #0d9ed9 );
+    background: -o-linear-gradient(top, #17a8e3, #0d9ed9 );
+    background-image: -ms-linear-gradient(top, #0b436e 0%, #0d9ed9 100%);
+    color: #fff;
+    -webkit-border-radius: 4px;
+    border: 1px solid #0d9ed9;
+  }
+  
+  .login .button-primary:active {
+    background-color:#17a8e3 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0d9ed9), to(#17a8e3));
+    background: -webkit-linear-gradient(top, #0d9ed9, #17a8e3);
+    background: -moz-linear-gradient(top, #0d9ed9, #17a8e3);
+    background: -ms-linear-gradient(top, #0d9ed9, #17a8e3);
+    background: -o-linear-gradient(top, #0d9ed9, #17a8e3);
+    background-image: -ms-linear-gradient(top, #0d9ed9 0%, #17a8e3 100%);
+    color: #fff;
+    -webkit-border-radius: 4px;
+    border: 1px solid #0d9ed9;
+  }
+  
+  p#nav {
+    display: none;
+  }
+  
+  p#backtoblog {
+    display: none;
+  }
+  
